@@ -1,0 +1,10 @@
+/.idea                      export-ignore
+/.editorconfig              export-ignore
+/.gitattributes             export-ignore
+/.github/                   export-ignore
+/.gitignore                 export-ignore
+/phpcs.xml.dist             export-ignore
+/phpunit.xml.dist           export-ignore
+/psalm-baseline.xml         export-ignore
+/psalm.xml                  export-ignore
+/tests/                     export-ignore

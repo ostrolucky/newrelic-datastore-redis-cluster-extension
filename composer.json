@@ -1,0 +1,51 @@
+{
+    "name": "ostrolucky/newrelic-datastore-redis-cluster-extension",
+    "description": "Provides RedisCluster phpredis integration for NR APM datastore by forwarding redis calls through newrelic_record_datastore_segment function",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": [
+        "newrelic",
+        "redis"
+    ],
+    "authors": [
+        {
+            "name": "Gabriel Ostrolucký",
+            "email": "gabriel.ostrolucky@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8",
+        "snc/redis-bundle": ">=4.1",
+        "symfony/dependency-injection": ">=4.4.27"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ostrolucky\\NewrelicDatastoreRedisClusterExtension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ostrolucky\\Test\\NewrelicDatastoreRedisClusterExtension\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ramsey/composer-repl": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "require-dev": {
+        "ext-redis": "*",
+        "friendsofphp/proxy-manager-lts": ">=1.0",
+        "phpunit/phpunit": ">=9.5.5",
+        "ramsey/coding-standard": "^2.0",
+        "symfony/config": ">=4.4.12",
+        "symfony/console": "*",
+        "symfony/http-foundation": ">=4.4.30"
+    }
+}
