@@ -5,12 +5,14 @@ declare(strict_types=1);
 namespace Ostrolucky\NewrelicDatastoreRedisClusterExtension;
 
 use RedisCluster;
-use Snc\RedisBundle\Logger\RedisCallInterceptor;
 
 use function function_exists;
 
 class Interceptor
 {
+    /**
+     * @var callable
+     */
     private $wrappedInterceptor;
 
     public function __construct(callable $wrappedInterceptor)
