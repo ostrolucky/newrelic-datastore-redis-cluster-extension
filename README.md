@@ -9,7 +9,7 @@
 You might have found out NewRelic PHP extension doesn't support to monitor \RedisCluster queries.
 
 You can see that in [their knowledge base](https://newrelic.zendesk.com/hc/en-us/articles/360059017673-PHP-Redis-issue)
-as well as in [their bug tracker](https://ghttps://docs.newrelic.com/docs/apm/agents/php-agent/php-agent-api/newrelic_record_datastore_segment/ithub.com/newrelic/newrelic-php-agent/issues/130).
+as well as in [their bug tracker](https://github.com/newrelic/newrelic-php-agent/issues/130).
 
 What NewRelic support recommends doing,
 is to use custom instrumentation via [newrelic_record_datastore_segment](https://docs.newrelic.com/docs/apm/agents/php-agent/php-agent-api/newrelic_record_datastore_segment/). However, doing that manually is cumbersome. Redis has lot of functions.. That's where this package comes in play. It's meant to be used along [snc/redis-bundle](https://github.com/snc/SncRedisBundle).
